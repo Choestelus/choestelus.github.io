@@ -1,15 +1,15 @@
-title:            Site Title
+title:            Under Construction
 description:      Describe your website here.
 disqus_shortname: 
-reading_time:     true
+reading_time:     false
 words_per_minute: 200
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+url:              http://choestelus.github.io
 
 # Owner/author information
 owner:
   name:           Your Name
-  avatar:         avatar.jpg
+  avatar:         avatar.png
   bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
   email:          you@email.com
   # Social networking links used in footer. Update and remove as you like.
@@ -44,7 +44,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Bangkok
 future:      true
 highlighter: pygments
 markdown:    kramdown
