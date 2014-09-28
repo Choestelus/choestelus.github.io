@@ -7,7 +7,7 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: false
 share: true
 ---
 อัพบล็อกใหม่อีกครั้ง รอบนี้ตัดสินใจว่าจะเอาขึ้น github หลังจากขี้เกียจไปฟัดกับ ghost และขี้เกียจไปเช่า digitalocean อีก เนื่องจากเสียเดือนละ $5 แต่ก็ไม่ได้ใช้ทำอะไรให้คุ้มเท่าไรนัก
