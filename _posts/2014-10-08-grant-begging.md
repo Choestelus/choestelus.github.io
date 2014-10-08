@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: false
-share: false
+share: true
 ---
 
 เรื่องขอทุนในคณะนี่ ถ้าไม่ได้ให้จำนวนเยอะ ๆ จริง ๆ หรือคิดว่าได้แน่ ๆ
