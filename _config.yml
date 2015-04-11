@@ -72,7 +72,7 @@ prose:
 	site: "http://choestelus.github.io"
     media: "images"
     metadata:
-      _posts:
+      "_posts":
       
         - name: "layout"
           field:
