@@ -67,3 +67,54 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
+prose:
+	site: "http://choestelus.github.io"
+    media: "images"
+    metadata:
+      _post:
+      
+        - name: "layout"
+          field:
+            element: "hidden"
+              value: "post"
+              
+        - name: "modified"
+          field:
+            element: "text"
+            label: "Time modified"
+            value: CURRENT_DATETIME
+            
+        - name: "title"
+          field:
+            element: "text"
+            label: "title"
+            placeholder: "Awesome title here!"
+            
+        - name: "comments"
+          field:
+            element: "checkbox"
+            label: "Allow comments"
+            value: false
+            
+        - name: "share"
+          field:
+            element: "checkbox"
+            label "Allow sharing"
+            value: true
+        
+        - name: "tags"
+          field:
+            element: "multiselect"
+            label: "Add Tags"
+            placeholder: "Choose Tags"
+            alterable: true
+            options:
+              - name: "Apples"
+                value: "apples"
+              - name: "Bananas"
+                value: "bananas"
+              - name: "Pears"
+                value: "pears"
+              - name: "Mangos"
+                value: "mangos"
