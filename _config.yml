@@ -6,6 +6,34 @@ words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
 url: http://choestelus.github.io
+prose:
+    siteurl: 'http://choestelus.github.io'
+    metadata:
+        _drafts:
+            - name: layout
+              field:
+                  element: hidden
+                  value: post
+            - name: categories
+              field:
+                  element: hidden
+                  value: blog
+            - name: title
+              field:
+                  element: text
+            - name: date
+              field:
+                  element: hidden
+            - name: excerpt
+              field:
+                  element: text
+                  placeholder: Use 200 characters at most.
+            - name: id
+              field:
+                  element: hidden
+            - name: tags
+              field:
+                  element: hidden
 
 # Owner/author information
 owner:
@@ -67,33 +95,4 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-prose:
-    siteurl: 'https://choestelus.github.io'
-    metadata:
-        _drafts:
-            - name: layout
-              field:
-                  element: hidden
-                  value: post
-            - name: categories
-              field:
-                  element: hidden
-                  value: blog
-            - name: title
-              field:
-                  element: text
-            - name: date
-              field:
-                  element: hidden
-            - name: excerpt
-              field:
-                  element: text
-                  placeholder: Use 200 characters at most.
-            - name: id
-              field:
-                  element: hidden
-            - name: tags
-              field:
-                  element: hidden
 
