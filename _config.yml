@@ -69,28 +69,31 @@ include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
 
 prose:
-	site: "http://choestelus.github.io"
-    media: "images"
+    siteurl: 'https://choestelus.github.io'
     metadata:
-      _posts:
-        - name: "layout"
-          field:
-            element: "hidden"
-            value: "post"
-        - name: "title"
-          field:
-            element: "text"
-            label: "title"
-            placeholder: "Awesome title here!"
-            
-        - name: "comments"
-          field:
-            element: "checkbox"
-            label: "Allow comments"
-            value: false
-            
-        - name: "share"
-          field:
-            element: "checkbox"
-            label "Allow sharing"
-            value: true
+        _drafts:
+            - name: layout
+              field:
+                  element: hidden
+                  value: post
+            - name: categories
+              field:
+                  element: hidden
+                  value: blog
+            - name: title
+              field:
+                  element: text
+            - name: date
+              field:
+                  element: hidden
+            - name: excerpt
+              field:
+                  element: text
+                  placeholder: Use 200 characters at most.
+            - name: id
+              field:
+                  element: hidden
+            - name: tags
+              field:
+                  element: hidden
+
