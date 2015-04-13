@@ -4,13 +4,13 @@ title: "Another Failure"
 modified: 
 categories: 
 description:
-tags: []
+tags: [meta, blog]
 image:
   feature:
   credit:
   creditlink:
-comments:
-share:
+comments: false
+share: true
 date: 2015-04-13T20:56:40+00:00
 ---
 
