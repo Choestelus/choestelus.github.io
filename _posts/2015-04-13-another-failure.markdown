@@ -1,17 +1,20 @@
 ---
 layout: post
-title: "Another Failure"
-modified: 
-categories: 
-description:
-tags: [meta, blog]
-image:
-  feature:
-  credit:
-  creditlink:
+title: Another Failure
+modified: null
+categories: null
+description: null
+tags: 
+  - meta
+  - blog
+image: 
+  feature: null
+  credit: null
+  creditlink: null
 comments: false
 share: true
-date: 2015-04-13T20:56:40+00:00
+date: {}
+published: true
 ---
 
 ใช้ Jekyll มาตั้งนาน
@@ -21,3 +24,87 @@ date: 2015-04-13T20:56:40+00:00
 ...
 
 อีกไม่นานคงได้มีการรื้ออีกรอบ
+
+----
+https://www.howtoforge.com/linux-basics-set-a-static-ip-on-centos  ⇐ config ip
+
+useradd rinlapat
+passwd rinlapat
+useradd -M grader
+passwd grader
+
+force password change
+chage -d0 [username]
+
+http://www.unixmen.com/ifconfig-command-found-centos-7-minimal-installation-quick-tip-fix/
+
+http://www.rackspace.com/knowledge_center/article/centos-hostname-change
+
+http://www.cyberciti.biz/faq/rhel-fedora-centos-configure-ntp-client-server/
+
+https://www.howtoforge.com/samba-server-installation-and-configuration-on-centos-7
+
+http://theurbanpenguin.com/wp/?p=3401 //config จำนวน pswd ขั้นต่ำ
+
+Enforcing Good Password => slide 7 page 33
+
+ข้อ1.4
+
+vi /etc/ssh/sshd_config
+เอา # ตรง PermitRootLogin yes ออก 
+เปลี่ยนเป็น PermitRootLogin no
+service sshd restart
+
+
+ข้อ1.5
+
+yum install ntp
+vi /etc/ntp.conf
+เอา server เดิมออกให้หมด
+ใส่ server ntp.kmitl.ac.th
+sudo service ntpd restart
+
+
+ดู port ที่เปิด
+http://www.cyberciti.biz/tips/linux-display-open-ports-owner.html
+
+ข้อ2
+
+yum groupinstall “Web Server”
+yum install httpd
+chkconfig httpd on
+service httpd start
+systemctl enable httpd.service
+systemctl start httpd.service
+systemctl status httpd.service
+
+ps -ef | grep httpd    ⇐  check apache
+yum install net-tools
+netstat -tupln | grep httpd  ⇐ check port
+
+chmod 705 exam.py
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmp --reload  << cmd  ปะ? 
+
+http://www.server-world.info/en/note?os=CentOS_7&p=httpd&f=2
+
+
+ข้อ3.1
+# auditctl -w /etc/passwd -p rwa
+# auditctl -w /etc/shadow -p rwa
+# auditctl -w /etc/group -p rwa
+# ausearch -f /etc/passwd
+# ausearch -f /etc/shadow
+# ausearch -f /etc/group
+
+
+ข้อ3.2
+# cat /var/log/secure
+
+ข้อ3.3
+ใช้ cat /etc/passwd ดู user แปลกๆ 
+find / -user userแปลก
+ตามไป rm
+ใช้ userdel ลบ user แปลก
+ระวังอย่าไปลบ user ของ samba
+อย่าลืมลบไฟล์ของ user opt
