@@ -1,18 +1,46 @@
-title:            Site Title
-description:      Describe your website here.
-disqus_shortname: hpstrtheme
-reading_time:     true
+title:            Choestelus StackTrace
+description:      Insignificant Blog
+disqus_shortname:
+reading_time:     false
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url: http://choestelus.github.io
+prose:
+    siteurl: 'http://choestelus.github.io'
+    metadata:
+        _drafts:
+            - name: layout
+              field:
+                  element: hidden
+                  value: post
+            - name: categories
+              field:
+                  element: hidden
+                  value: blog
+            - name: title
+              field:
+                  element: text
+            - name: date
+              field:
+                  element: hidden
+            - name: excerpt
+              field:
+                  element: text
+                  placeholder: Use 200 characters at most.
+            - name: id
+              field:
+                  element: hidden
+            - name: tags
+              field:
+                  element: hidden
 
 # Owner/author information
 owner:
-  name:           Your Name
-  avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
-  email:          you@email.com
+  name:           Choestelus
+  avatar:         avatar.png
+  bio:            "The [almost] Insignificant Being"
+  email:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
@@ -23,7 +51,7 @@ owner:
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:    +ChoestelusChCh
 
 # Background image to be tiled on all pages
 background: 
@@ -35,7 +63,7 @@ google_verify:
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Bangkok
 future:      true
 highlighter: pygments
 markdown:    kramdown
@@ -67,3 +95,4 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
